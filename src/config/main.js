@@ -20,4 +20,3 @@ require.config({
     },
     deps: ['../app/bootstrap']
 });
-//# sourceMappingURL=main.js.map
