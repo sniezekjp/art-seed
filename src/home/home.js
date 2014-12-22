@@ -11,8 +11,7 @@ define(["require", "exports", '../app/app'], function (require, exports, app) {
                     return Lazy.load('../home/HomeController');
                 }
             }
-        }).state('other', {
-            url: '/other'
         });
     });
 });
+//# sourceMappingURL=home.js.map
