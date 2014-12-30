@@ -3,11 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <title>app</title>
+  <base href="/" />
+  <link rel="stylesheet" href="vendor/foundation/css/normalize.css"/>
+  <link rel="stylesheet" href="vendor/foundation/css/foundation.css"/>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <a href="" ui-sref="home">Home</a>
-  <a href="" ui-sref="contact">Contact</a>
+
+  <div class="sidebar">
+    <ul ng-controller="SidebarController">
+      <li ng-repeat="item in menu">
+        <a href="" ui-sref="{{item.sref}}" ng-bind="item.name"></a>
+      </li>
+    </ul>
+  </div>
+
   <div ui-view></div>
+
   <script src="vendor/requirejs/require.js" data-main="config/main"></script>
 </body>
 </html>

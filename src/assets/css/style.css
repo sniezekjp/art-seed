@@ -1,0 +1,7 @@
+.sidebar {
+  width: 300px;
+  background-color: #000;
+  color: #fff;
+  float: left; }
+  .sidebar a {
+    color: #fff; }
