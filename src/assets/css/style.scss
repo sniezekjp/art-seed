@@ -1,9 +1,17 @@
 .sidebar {
     width: 300px;
-    background-color: #000;
+    background-color: #333333;
     color: #fff;
     float:left;
     a {
         color: #fff;
+        &.active {
+            color: #00aeef;
+        }
+    }
+}
+.tab-bar {
+    &.open {
+        left: 300px;
     }
 }

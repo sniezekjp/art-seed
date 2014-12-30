@@ -10,16 +10,8 @@
 </head>
 <body>
 
-  <div class="sidebar">
-    <ul ng-controller="SidebarController">
-      <li ng-repeat="item in menu">
-        <a href="" ui-sref="{{item.sref}}" ng-bind="item.name"></a>
-      </li>
-    </ul>
-  </div>
-
   <div ui-view></div>
 
-  <script src="vendor/requirejs/require.js" data-main="config/main"></script>
+  <script src="vendor/requirejs/require.js" data-main="app/config"></script>
 </body>
 </html>

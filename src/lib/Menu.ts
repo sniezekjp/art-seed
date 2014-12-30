@@ -29,7 +29,6 @@ class Menu {
         Object.keys(this.menuItems).sort().forEach((key)=> {
           result.push(this.menuItems[key]);
         });
-        console.log(this.menuItems);
         return result;
       };
 

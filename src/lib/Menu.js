@@ -20,7 +20,6 @@ define(["require", "exports", '../app/app'], function (require, exports, app) {
                     Object.keys(this.menuItems).sort().forEach(function (key) {
                         result.push(_this.menuItems[key]);
                     });
-                    console.log(this.menuItems);
                     return result;
                 };
             });
